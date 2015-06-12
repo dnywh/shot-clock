@@ -1,0 +1,5095 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+
+<head>
+	<title>Shot Clock</title>
+	<meta http-equiv="Content-Type" name="How the 24-Second Shot Clock saved the NBA" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">	
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- turn on media queries (+ bring to 100%, + no pinch-to-zoom etc) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<header>
+		<div id="red-line"></div>
+		<h6>24</h6>
+		<div id="red-line"></div>
+
+		<h1><span>Shot</span><br>Clock</h1>
+		<h2>Officially born October 30, 1954</h2>
+		<div id="red-line"></div>
+		<p>The 24-second Shot Clock saved the NBA. Invented by Syracuse Nationals owner Danny Biasone and introduced officially for the 1954-55 season, changes in points per game, pace, field-goal attempts, and attendance were dramatic.</p>
+		<p>The visualisation below maps the changes in points per game (PPG) and attendance in the eight seasons before, after, and including the decisive 1954-55 season. Hover over the visualised data to learn more.</p>
+		<div id="red-line"></div>
+	</header>
+
+	<!-- the guidelines -->
+	<div  class="block">
+		<table id="lines-table">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="red"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		</table>
+	</div>
+
+
+	<!-- the years headers -->
+	<table id="header-table" class="block">
+		<tr>
+			<td class="header-table-data">&rsquo;46-47</td>
+			<td class="header-table-data">&rsquo;47-48</td>
+			<td class="header-table-data">&rsquo;48-49</td>
+			<td class="header-table-data">&rsquo;49-50</td>
+			<td class="header-table-data">&rsquo;50-51</td>
+			<td class="header-table-data">&rsquo;51-52</td>
+			<td class="header-table-data">&rsquo;52-53</td>
+			<td class="header-table-data">&rsquo;53-54</td>
+			<td class="header-table-data red">1954-55</td>
+			<td class="header-table-data">&rsquo;55-56</td>
+			<td class="header-table-data">&rsquo;56-57</td>
+			<td class="header-table-data">&rsquo;57-58</td>
+			<td class="header-table-data">&rsquo;58-59</td>
+			<td class="header-table-data">&rsquo;59-60</td>
+			<td class="header-table-data">&rsquo;60-61</td>
+			<td class="header-table-data">&rsquo;61-62</td>
+			<td class="header-table-data">&rsquo;62-63</td>
+		</tr>
+	</table>
+
+	<!-- PPG, ATT -->
+	<section class="inside">
+		
+		<!-- containing div to allow the two SVGs to sit on top of eachother (absolute positioning on them) -->
+		<div id="outer">
+			<!-- the vis SVG -->
+			<svg class="svg" id="ppg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1.495 132.371 1202.99 674.235" xml:space="preserve">
+				<!-- the dots behind -->
+				<g id="points">
+					<circle fill="#FFFFFF" cx="105.191" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="724.279" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="677.954" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="770.605" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="585.303" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="538.977" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="631.628" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="446.325" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="399.999" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="492.651" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="307.349" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="307.349" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="307.348" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="261.022" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="214.696" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="168.37" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="670.687" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="741.374" cy="168.37" r="2"/>
+					<circle fill="#FFFFFF" cx="812.061" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="882.747" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="168.371" r="2"/>
+					<circle fill="#FFFFFF" cx="34.505" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="105.191" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="246.565" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="317.253" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="387.939" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="458.626" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="529.313" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="600" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="953.435" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="1024.121" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="1094.808" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="1165.495" cy="353.674" r="2"/>
+					<circle fill="#FFFFFF" cx="175.879" cy="677.954" r="2"/>
+				</g>
+				<g id="SAC">
+					<path id="SAC-62" class="SAC" opacity="0.5" fill="#FFFFFF" d="M1165.494,198.696c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16
+						s-16-7.164-16-16C1149.494,205.853,1156.658,198.696,1165.494,198.696z"/>
+					<path id="SAC-61" class="SAC" fill="#FFFFFF" d="M1094.808,150.371c9.949,0,18,8.051,18,18c0,9.94-8.051,18-18,18c-9.933,0-18-8.06-18-18
+						C1076.808,158.421,1084.875,150.371,1094.808,150.371z"/>
+					<path id="SAC-60" class="SAC" opacity="0.5" fill="#FFFFFF" d="M1024.121,188.696c14.359,0,26,11.629,26,26c0,14.358-11.641,26-26,26
+						s-26-11.642-26-26C998.121,200.325,1009.762,188.696,1024.121,188.696z"/>
+					<path id="SAC-59" class="SAC" fill="#FFFFFF" d="M953.435,299.348c4.418,0,8,3.578,8,8c0,4.418-3.582,8-8,8s-8-3.582-8-8
+						C945.435,302.926,949.017,299.348,953.435,299.348z"/>
+					<path id="SAC-58" class="SAC" fill="#FFFFFF" d="M882.747,343.674c5.522,0,10,4.473,10,10c0,5.522-4.478,10-10,10s-10-4.478-10-10
+						C872.747,348.146,877.225,343.674,882.747,343.674z"/>
+					<path id="SAC-57" class="SAC" fill="#FFFFFF" d="M812.061,381.999c9.94,0,18,8.055,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C794.061,390.054,802.12,381.999,812.061,381.999z"/>
+					<path id="SAC-56" class="SAC" opacity="0.5" fill="#FFFFFF" d="M741.374,428.325c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C723.374,436.376,731.434,428.325,741.374,428.325z"/>
+					<path id="SAC-55" class="SAC" opacity="0.5" fill="#FFFFFF" d="M670.687,428.325c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C652.687,436.376,660.746,428.325,670.687,428.325z"/>
+					<path id="SAC-54" class="SAC" fill="#FFFFFF" d="M600,482.651c5.522,0,10,4.473,10,10c0,5.522-4.478,10-10,10s-10-4.478-10-10
+						C590,487.124,594.478,482.651,600,482.651z"/>
+					<path id="SAC-49" class="SAC" fill="#FFFFFF" d="M246.565,575.303c5.522,0,10,4.473,10,10c0,5.522-4.478,10-10,10c-5.525,0-10-4.478-10-10
+						C236.565,579.775,241.041,575.303,246.565,575.303z"/>
+					<path id="SAC-48" class="SAC" opacity="0.5" fill="#FFFFFF" d="M175.879,508.977c16.567,0,30,13.418,30,30c0,16.567-13.433,30-30,30
+						c-16.575,0-30-13.433-30-30C145.879,522.395,159.304,508.977,175.879,508.977z"/>
+				</g>
+				<g id="PHI">
+					<path id="PHI-62" opacity="0.5" fill="#FFFFFF" d="M1165.494,190.696c13.254,0,24,10.734,24,24c0,13.254-10.746,24-24,24
+						s-24-10.746-24-24C1141.494,201.431,1152.24,190.696,1165.494,190.696z"/>
+					<path id="PHI-61" fill="#FFFFFF" d="M1094.808,198.696c8.844,0,16,7.156,16,16c0,8.836-7.156,16-16,16c-8.827,0-16-7.164-16-16
+						C1078.808,205.853,1085.98,198.696,1094.808,198.696z"/>
+					<path id="PHI-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,198.696c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16
+						c-8.837,0-16-7.164-16-16C1008.121,205.853,1015.284,198.696,1024.121,198.696z"/>
+					<path id="PHI-59" fill="#FFFFFF" d="M953.435,198.696c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16s-16-7.164-16-16
+						C937.435,205.853,944.599,198.696,953.435,198.696z"/>
+					<path id="PHI-58" fill="#FFFFFF" d="M882.747,243.022c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C864.747,251.073,872.807,243.022,882.747,243.022z"/>
+					<path id="PHI-57" opacity="0.5" fill="#FFFFFF" d="M812.061,335.674c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C794.061,343.725,802.12,335.674,812.061,335.674z"/>
+					<path id="PHI-56" opacity="0.5" fill="#FFFFFF" d="M741.374,383.999c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16
+						s-16-7.164-16-16C725.374,391.155,732.538,383.999,741.374,383.999z"/>
+					<path id="PHI-55" opacity="0.5" fill="#FFFFFF" d="M670.687,428.325c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C652.687,436.376,660.746,428.325,670.687,428.325z"/>
+					<path id="PHI-51" opacity="1" fill="#FFFFFF" d="M387.939,470.651c12.149,0,22,9.84,22,22c0,12.149-9.851,22-22,22
+						c-12.155,0-22-9.851-22-22C365.939,480.491,375.785,470.651,387.939,470.651z"/>
+				</g>
+				<g id="NYN">
+					<path id="NYN-62" opacity="0.5" fill="#FFFFFF" d="M1165.495,271.348c19.882,0,36,16.102,36,36c0,19.881-16.118,36-36,36
+						c-19.88,0-36-16.119-36-36C1129.495,287.45,1145.615,271.348,1165.495,271.348z"/>
+					<path id="NYN-61" opacity="0.5" fill="#FFFFFF" d="M1094.808,229.022c17.688,0,32,14.312,32,32c0,17.672-14.312,32-32,32
+						c-17.656,0-32-14.328-32-32C1062.808,243.335,1077.151,229.022,1094.808,229.022z"/>
+					<path id="NYN-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,221.022c22.09,0,40,17.891,40,40c0,22.09-17.91,40-40,40
+						s-40-17.91-40-40C984.121,238.913,1002.031,221.022,1024.121,221.022z"/>
+					<path id="NYN-59" opacity="0.5" fill="#FFFFFF" d="M953.435,170.696c24.299,0,44,19.68,44,44c0,24.299-19.701,44-44,44
+						s-44-19.701-44-44C909.435,190.376,929.136,170.696,953.435,170.696z"/>
+					<path id="NYN-58" opacity="0.5" fill="#FFFFFF" d="M882.747,263.348c24.299,0,44,19.68,44,44c0,24.3-19.701,44-44,44
+						s-44-19.7-44-44C838.747,283.028,858.448,263.348,882.747,263.348z"/>
+					<path id="NYN-57" opacity="0.5" fill="#FFFFFF" d="M812.061,269.348c20.985,0,38,17.005,38,38c0,20.976-17.015,38-38,38
+						s-38-17.024-38-38C774.061,286.354,791.075,269.348,812.061,269.348z"/>
+					<path id="NYN-56" opacity="0.5" fill="#FFFFFF" d="M741.374,357.999c23.194,0,42,18.785,42,42c0,23.194-18.806,42-42,42
+						s-42-18.806-42-42C699.374,376.784,718.18,357.999,741.374,357.999z"/>
+					<path id="NYN-55" fill="#FFFFFF" d="M670.687,359.999c22.09,0,40,17.9,40,40c0,22.09-17.91,40-40,40s-40-17.91-40-40
+						C630.687,377.899,648.597,359.999,670.687,359.999z"/>
+					<path id="NYN-54" opacity="0.5" fill="#FFFFFF" d="M600,412.325c18.776,0,34,15.207,34,34c0,18.776-15.224,34-34,34
+						s-34-15.224-34-34C566,427.532,581.224,412.325,600,412.325z"/>
+					<path id="NYN-53" opacity="0.5" fill="#FFFFFF" d="M529.313,551.303c18.768,0,34,15.207,34,34c0,18.776-15.232,34-34,34
+						c-18.785,0-34-15.224-34-34C495.313,566.51,510.529,551.303,529.313,551.303z"/>
+					<path id="NYN-52" fill="#FFFFFF" d="M458.626,506.977c17.672,0,32,14.312,32,32c0,17.672-14.328,32-32,32s-32-14.328-32-32
+						C426.626,521.289,440.954,506.977,458.626,506.977z"/>
+					<path id="NYN-51" opacity="0.5" fill="#FFFFFF" d="M387.939,516.977c12.149,0,22,9.84,22,22c0,12.149-9.851,22-22,22
+						c-12.155,0-22-9.851-22-22C365.939,526.816,375.785,516.977,387.939,516.977z"/>
+					<path id="NYN-50" fill="#FFFFFF" d="M317.253,609.628c12.144,0,22,9.84,22,22c0,12.149-9.856,22-22,22c-12.16,0-22-9.851-22-22
+						C295.253,619.468,305.093,609.628,317.253,609.628z"/>
+					<path id="NYN-49" opacity="0.5" fill="#FFFFFF" d="M246.565,559.303c14.358,0,26,11.629,26,26c0,14.358-11.642,26-26,26
+						c-14.365,0-26-11.642-26-26C220.565,570.932,232.201,559.303,246.565,559.303z"/>
+					<path id="NYN-48" fill="#FFFFFF" d="M175.879,555.303c16.567,0,30,13.418,30,30c0,16.567-13.433,30-30,30
+						c-16.575,0-30-13.433-30-30C145.879,568.721,159.304,555.303,175.879,555.303z"/>
+					<path id="NYN-47" opacity="0.5" fill="#FFFFFF" d="M105.191,603.628c15.47,0,28,12.523,28,28c0,15.463-12.53,28-28,28
+						c-15.463,0-28-12.537-28-28C77.191,616.151,89.729,603.628,105.191,603.628z"/>
+					<path id="NYN-46" fill="#FFFFFF" d="M34.505,706.279c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18c-9.945,0-18-8.06-18-18
+						C16.505,714.33,24.56,706.279,34.505,706.279z"/>
+				</g>
+				<g id="GOL">
+					<path id="GOL-62" fill="#FFFFFF" d="M1165.494,202.696c6.627,0,12,5.367,12,12c0,6.627-5.373,12-12,12s-12-5.373-12-12
+						C1153.494,208.063,1158.867,202.696,1165.494,202.696z"/>
+					<path id="GOL-61" opacity="0.5" fill="#FFFFFF" d="M1094.808,146.371c12.16,0,22,9.84,22,22c0,12.149-9.84,22-22,22
+						c-12.14,0-22-9.851-22-22C1072.808,156.21,1082.668,146.371,1094.808,146.371z"/>
+					<path id="GOL-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,186.696c15.464,0,28,12.523,28,28c0,15.463-12.536,28-28,28
+						s-28-12.537-28-28C996.121,199.22,1008.657,186.696,1024.121,186.696z"/>
+					<path id="GOL-59" opacity="0.5" fill="#FFFFFF" d="M953.435,182.696c17.672,0,32,14.312,32,32c0,17.672-14.328,32-32,32
+						s-32-14.328-32-32C921.435,197.009,935.763,182.696,953.435,182.696z"/>
+					<path id="GOL-58" opacity="0.5" fill="#FFFFFF" d="M882.747,329.674c13.254,0,24,10.734,24,24c0,13.254-10.746,24-24,24
+						s-24-10.746-24-24C858.747,340.408,869.493,329.674,882.747,329.674z"/>
+					<path id="GOL-57" opacity="0.5" fill="#FFFFFF" d="M812.061,333.674c11.045,0,20,8.945,20,20c0,11.045-8.955,20-20,20
+						s-20-8.955-20-20C792.061,342.619,801.016,333.674,812.061,333.674z"/>
+					<path id="GOL-56" opacity="0.5" fill="#FFFFFF" d="M741.374,379.999c11.045,0,20,8.945,20,20c0,11.045-8.955,20-20,20
+						s-20-8.955-20-20C721.374,388.944,730.329,379.999,741.374,379.999z"/>
+					<path id="GOL-55" fill="#FFFFFF" d="M670.687,337.674c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16s-16-7.164-16-16
+						C654.687,344.83,661.851,337.674,670.687,337.674z"/>
+					<path id="GOL-54" fill="#FFFFFF" d="M600,422.325c13.254,0,24,10.734,24,24c0,13.254-10.746,24-24,24s-24-10.746-24-24
+						C576,433.06,586.746,422.325,600,422.325z"/>
+					<path id="GOL-53" opacity="0.5" fill="#FFFFFF" d="M529.313,561.303c13.248,0,24,10.734,24,24c0,13.254-10.752,24-24,24
+						c-13.26,0-24-10.746-24-24C505.313,572.037,516.054,561.303,529.313,561.303z"/>
+					<path id="GOL-52" fill="#FFFFFF" d="M458.626,567.303c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C440.626,575.354,448.686,567.303,458.626,567.303z"/>
+					<path id="GOL-51" fill="#FFFFFF" d="M387.939,526.977c6.627,0,12,5.367,12,12c0,6.627-5.373,12-12,12c-6.63,0-12-5.373-12-12
+						C375.939,532.344,381.31,526.977,387.939,526.977z"/>
+					<path id="GOL-50" opacity="0.5" fill="#FFFFFF" d="M317.253,520.977c9.932,0,18,8.051,18,18s-8.068,18-18,18
+						c-9.949,0-18-8.051-18-18S307.304,520.977,317.253,520.977z"/>
+					<path id="GOL-49" fill="#FFFFFF" d="M246.565,623.628c4.418,0,8,3.578,8,8c0,4.418-3.582,8-8,8c-4.42,0-8-3.582-8-8
+						C238.565,627.206,242.146,623.628,246.565,623.628z"/>
+					<path id="GOL-48" fill="#FFFFFF" d="M175.879,524.977c7.731,0,14,6.262,14,14c0,7.731-6.269,14-14,14c-7.735,0-14-6.269-14-14
+						C161.879,531.238,168.144,524.977,175.879,524.977z"/>
+					<path id="GOL-47" fill="#FFFFFF" d="M105.191,613.628c9.945,0,18,8.051,18,18c0,9.94-8.055,18-18,18c-9.94,0-18-8.06-18-18
+						C87.191,621.679,95.251,613.628,105.191,613.628z"/>
+					<path id="GOL-46" fill="#FFFFFF" d="M34.505,659.954c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18c-9.945,0-18-8.06-18-18
+						C16.505,668.005,24.56,659.954,34.505,659.954z"/>
+				</g>
+				<g id="DET">
+					<path id="DET-62" fill="#FFFFFF" d="M1165.495,245.022c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16s-16-7.164-16-16
+						C1149.495,252.179,1156.659,245.022,1165.495,245.022z"/>
+					<path id="DET-61" fill="#FFFFFF" d="M1094.808,241.022c11.055,0,20,8.945,20,20c0,11.045-8.945,20-20,20c-11.035,0-20-8.955-20-20
+						C1074.808,249.968,1083.772,241.022,1094.808,241.022z"/>
+					<path id="DET-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,192.696c12.15,0,22,9.84,22,22c0,12.149-9.85,22-22,22
+						s-22-9.851-22-22C1002.121,202.536,1011.971,192.696,1024.121,192.696z"/>
+					<path id="DET-59" opacity="0.5" fill="#FFFFFF" d="M953.435,285.348c12.149,0,22,9.84,22,22c0,12.149-9.851,22-22,22
+						s-22-9.851-22-22C931.435,295.188,941.285,285.348,953.435,285.348z"/>
+					<path id="DET-58" opacity="0.5" fill="#FFFFFF" d="M882.747,337.674c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16
+						s-16-7.164-16-16C866.747,344.83,873.911,337.674,882.747,337.674z"/>
+					<path id="DET-57" opacity="0.5" fill="#FFFFFF" d="M812.061,333.674c11.045,0,20,8.945,20,20c0,11.045-8.955,20-20,20
+						s-20-8.955-20-20C792.061,342.619,801.016,333.674,812.061,333.674z"/>
+					<path id="DET-56" fill="#FFFFFF" d="M741.374,430.325c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16s-16-7.164-16-16
+						C725.374,437.481,732.538,430.325,741.374,430.325z"/>
+					<path id="DET-55" opacity="0.5" fill="#FFFFFF" d="M670.687,428.325c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C652.687,436.376,660.746,428.325,670.687,428.325z"/>
+					<path id="DET-54" opacity="0.5" fill="#FFFFFF" d="M600,478.651c7.731,0,14,6.262,14,14c0,7.731-6.269,14-14,14s-14-6.269-14-14
+						C586,484.913,592.269,478.651,600,478.651z"/>
+					<path id="DET-53" fill="#FFFFFF" d="M529.313,569.303c8.832,0,16,7.156,16,16c0,8.836-7.168,16-16,16c-8.84,0-16-7.164-16-16
+						C513.313,576.459,520.474,569.303,529.313,569.303z"/>
+				</g>
+				<g id="BOS">
+					<path id="BOS-62" opacity="0.5" fill="#FFFFFF" d="M1165.494,178.696c19.881,0,36,16.102,36,36c0,19.881-16.119,36-36,36
+						s-36-16.119-36-36C1129.494,194.798,1145.613,178.696,1165.494,178.696z"/>
+					<path id="BOS-61" opacity="0.5" fill="#FFFFFF" d="M1094.808,186.696c15.477,0,28,12.523,28,28c0,15.463-12.523,28-28,28
+						c-15.447,0-28-12.537-28-28C1066.808,199.22,1079.36,186.696,1094.808,186.696z"/>
+					<path id="BOS-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,186.696c15.464,0,28,12.523,28,28c0,15.463-12.536,28-28,28
+						s-28-12.537-28-28C996.121,199.22,1008.657,186.696,1024.121,186.696z"/>
+					<path id="BOS-59" fill="#FFFFFF" d="M953.435,136.371c17.672,0,32,14.312,32,32c0,17.68-14.328,32-32,32s-32-14.32-32-32
+						C921.435,150.684,935.763,136.371,953.435,136.371z"/>
+					<path id="BOS-58" opacity="0.5" fill="#FFFFFF" d="M882.747,229.022c17.672,0,32,14.312,32,32c0,17.672-14.328,32-32,32
+						s-32-14.328-32-32C850.747,243.335,865.075,229.022,882.747,229.022z"/>
+					<path id="BOS-57" opacity="0.5" fill="#FFFFFF" d="M812.061,273.348c18.776,0,34,15.215,34,34c0,18.768-15.224,34-34,34
+						s-34-15.232-34-34C778.061,288.563,793.284,273.348,812.061,273.348z"/>
+					<path id="BOS-56" fill="#FFFFFF" d="M741.374,311.674c23.194,0,42,18.785,42,42c0,23.194-18.806,42-42,42s-42-18.806-42-42
+						C699.374,330.459,718.18,311.674,741.374,311.674z"/>
+					<path id="BOS-55" opacity="0.5" fill="#FFFFFF" d="M670.687,321.674c17.672,0,32,14.312,32,32c0,17.672-14.328,32-32,32
+						s-32-14.328-32-32C638.687,335.986,653.015,321.674,670.687,321.674z"/>
+					<path id="BOS-54" fill="#FFFFFF" d="M600,372c15.463,0,28,12.525,28,28.003C628,415.461,615.463,428,600,428s-28-12.539-28-27.997
+						C572,384.524,584.537,372,600,372z"/>
+					<path id="BOS-53" fill="#FFFFFF" d="M529.313,462.651c16.56,0,30,13.418,30,30c0,16.567-13.44,30-30,30c-16.575,0-30-13.433-30-30
+						C499.313,476.069,512.739,462.651,529.313,462.651z"/>
+					<path id="BOS-52" fill="#FFFFFF" d="M458.626,466.651c14.358,0,26,11.629,26,26c0,14.358-11.642,26-26,26s-26-11.642-26-26
+						C432.626,478.28,444.268,466.651,458.626,466.651z"/>
+					<path id="BOS-51" fill="#FFFFFF" d="M387.939,470.651c12.149,0,22,9.84,22,22c0,12.149-9.851,22-22,22c-12.155,0-22-9.851-22-22
+						C365.939,480.491,375.785,470.651,387.939,470.651z"/>
+					<path id="BOS-50" opacity="0.5" fill="#FFFFFF" d="M317.253,514.977c13.242,0,24,10.734,24,24s-10.758,24-24,24
+						c-13.266,0-24-10.734-24-24S303.987,514.977,317.253,514.977z"/>
+					<path id="BOS-49" opacity="0.5" fill="#FFFFFF" d="M246.565,567.303c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18
+						c-9.945,0-18-8.06-18-18C228.565,575.354,236.621,567.303,246.565,567.303z"/>
+					<path id="BOS-48" fill="#FFFFFF" d="M175.879,611.628c11.045,0,20,8.945,20,20c0,11.045-8.955,20-20,20c-11.05,0-20-8.955-20-20
+						C155.879,620.573,164.829,611.628,175.879,611.628z"/>
+					<path id="BOS-47" fill="#FFFFFF" d="M105.191,661.954c8.84,0,16,7.156,16,16c0,8.836-7.16,16-16,16c-8.836,0-16-7.164-16-16
+						C89.191,669.11,96.355,661.954,105.191,661.954z"/>
+					<path id="BOS-46" fill="#FFFFFF" d="M34.505,756.605c7.731,0,14,6.262,14,14c0,7.731-6.269,14-14,14c-7.735,0-14-6.269-14-14
+						C20.505,762.867,26.77,756.605,34.505,756.605z"/>
+				</g>
+				<g id="ATL">
+					<path id="ATL-62" fill="#FFFFFF" d="M1165.495,277.348c16.568,0,30,13.418,30,30c0,16.567-13.432,30-30,30
+						c-16.566,0-30-13.433-30-30C1135.495,290.766,1148.929,277.348,1165.495,277.348z"/>
+					<path id="ATL-61" opacity="0.5" fill="#FFFFFF" d="M1094.808,184.696c16.582,0,30,13.418,30,30c0,16.567-13.418,30-30,30
+						c-16.551,0-30-13.433-30-30C1064.808,198.114,1078.257,184.696,1094.808,184.696z"/>
+					<path id="ATL-60" opacity="0.5" fill="#FFFFFF" d="M1024.121,180.696c18.777,0,34,15.207,34,34c0,18.776-15.223,34-34,34
+						s-34-15.224-34-34C990.121,195.903,1005.344,180.696,1024.121,180.696z"/>
+					<path id="ATL-59" fill="#FFFFFF" d="M953.435,227.022c18.776,0,34,15.207,34,34c0,18.776-15.224,34-34,34s-34-15.224-34-34
+						C919.435,242.229,934.658,227.022,953.435,227.022z"/>
+					<path id="ATL-58" fill="#FFFFFF" d="M882.747,273.348c18.776,0,34,15.207,34,34c0,18.777-15.224,34-34,34s-34-15.223-34-34
+						C848.747,288.555,863.971,273.348,882.747,273.348z"/>
+					<path id="ATL-57" fill="#FFFFFF" d="M812.061,279.348c15.463,0,28,12.53,28,28c0,15.456-12.537,28-28,28s-28-12.544-28-28
+						C784.061,291.878,796.598,279.348,812.061,279.348z"/>
+					<path id="ATL-56" opacity="0.5" fill="#FFFFFF" d="M741.374,371.999c15.463,0,28,12.523,28,28c0,15.463-12.537,28-28,28
+						s-28-12.537-28-28C713.374,384.522,725.911,371.999,741.374,371.999z"/>
+					<path id="ATL-55" opacity="0.5" fill="#FFFFFF" d="M670.687,422.325c13.254,0,24,10.734,24,24c0,13.254-10.746,24-24,24
+						s-24-10.746-24-24C646.687,433.06,657.433,422.325,670.687,422.325z"/>
+					<path id="ATL-54" fill="#FFFFFF" d="M600,524.977c7.731,0,14,6.262,14,14c0,7.731-6.269,14-14,14s-14-6.269-14-14
+						C586,531.238,592.269,524.977,600,524.977z"/>
+					<path id="ATL-53" fill="#FFFFFF" d="M529.313,667.954c5.52,0,10,4.473,10,10c0,5.522-4.48,10-10,10c-5.525,0-10-4.478-10-10
+						C519.313,672.427,523.789,667.954,529.313,667.954z"/>
+					<path id="ATL-52" fill="#FFFFFF" d="M458.626,607.628c13.254,0,24,10.734,24,24c0,13.254-10.746,24-24,24s-24-10.746-24-24
+						C434.626,618.362,445.372,607.628,458.626,607.628z"/>
+					<path id="ATL-50" fill="#FFFFFF" d="M317.253,526.977c6.621,0,12,5.367,12,12s-5.379,12-12,12c-6.633,0-12-5.367-12-12
+						S310.62,526.977,317.253,526.977z"/>
+				</g>
+				<g id="LAL">
+					<path id="LAL-62" opacity="0.5" fill="#FFFFFF" d="M1165.495,227.022c18.776,0,34,15.207,34,34c0,18.776-15.224,34-34,34
+						s-34-15.224-34-34C1131.495,242.229,1146.719,227.022,1165.495,227.022z"/>
+					<path id="LAL-61" opacity="0.5" fill="#FFFFFF" d="M1094.808,190.696c13.266,0,24,10.734,24,24c0,13.254-10.734,24-24,24
+						c-13.24,0-24-10.746-24-24C1070.808,201.431,1081.567,190.696,1094.808,190.696z"/>
+					<path id="LAL-60" fill="#FFFFFF" d="M1024.121,241.022c11.045,0,20,8.945,20,20c0,11.045-8.955,20-20,20s-20-8.955-20-20
+						C1004.121,249.968,1013.076,241.022,1024.121,241.022z"/>
+					<path id="LAL-59" opacity="0.5" fill="#FFFFFF" d="M953.435,291.348c8.836,0,16,7.156,16,16c0,8.836-7.164,16-16,16
+						s-16-7.164-16-16C937.435,298.504,944.599,291.348,953.435,291.348z"/>
+					<path id="LAL-58" opacity="0.5" fill="#FFFFFF" d="M882.747,323.674c16.567,0,30,13.418,30,30c0,16.567-13.433,30-30,30
+						s-30-13.433-30-30C852.747,337.092,866.18,323.674,882.747,323.674z"/>
+					<path id="LAL-57" opacity="0.5" fill="#FFFFFF" d="M812.061,335.674c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C794.061,343.725,802.12,335.674,812.061,335.674z"/>
+					<path id="LAL-56" fill="#FFFFFF" d="M741.374,389.999c5.522,0,10,4.473,10,10c0,5.522-4.478,10-10,10s-10-4.478-10-10
+						C731.374,394.472,735.852,389.999,741.374,389.999z"/>
+					<path id="LAL-55" opacity="0.5" fill="#FFFFFF" d="M670.687,335.674c9.94,0,18,8.051,18,18c0,9.94-8.06,18-18,18s-18-8.06-18-18
+						C652.687,343.725,660.746,335.674,670.687,335.674z"/>
+					<path id="LAL-50" opacity="0.5" fill="#FFFFFF" d="M317.253,516.977c12.139,0,22,9.84,22,22s-9.861,22-22,22
+						c-12.16,0-22-9.84-22-22S305.093,516.977,317.253,516.977z"/>
+				</g>
+			</svg>
+
+			<!-- the tooltips SVG -->
+			<svg class="svg" id="ppg_tooltips" class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1.495 132.371 1202.99 674.235">
+				
+				<!-- ATL -->
+
+				    <!-- ATL 50 -->
+					<g class="tooltip" id="ATL-50_tooltip" opacity="0" transform="translate(317.253, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1950-51 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 84.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2895
+				        </text>
+				    </g>
+
+				    <!-- ATL 52 -->
+					<g class="tooltip" id="ATL-52_tooltip" opacity="0" transform="translate(458.626, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1952-53 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 75.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6212
+				        </text>
+				    </g>
+
+					<!-- ATL 53 -->
+					<g class="tooltip" id="ATL-53_tooltip" opacity="0" transform="translate(529.313, 677.954)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1953-54 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 70
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2509
+				        </text>
+				    </g>
+
+				    <!-- ATL 54 -->
+				    <g class="tooltip" id="ATL-54_tooltip" opacity="0" transform="translate(600, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 87.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3588
+				        </text>
+				    </g>
+
+				    <!-- ATL 55 -->
+				    <g class="tooltip" id="ATL-55_tooltip" opacity="0" transform="translate(670.687, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 96.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6000
+				        </text>
+				    </g>
+
+				    <!-- ATL 56 -->
+				    <g class="tooltip" id="ATL-56_tooltip" opacity="0" transform="translate(741.374, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 98.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7010
+				        </text>
+				    </g>
+
+				    <!-- ATL 57 -->
+				    <g class="tooltip" id="ATL-57_tooltip" opacity="0" transform="translate(812.061, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 107.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7242
+				        </text>
+				    </g>
+
+				    <!-- ATL 58 -->
+				    <g class="tooltip" id="ATL-58_tooltip" opacity="0" transform="translate(882.748, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 108.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8548
+				        </text>
+				    </g>
+
+				    <!-- ATL 59 -->
+				    <g class="tooltip" id="ATL-59_tooltip" opacity="0" transform="translate(953.435, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 113.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8409
+				        </text>
+				    </g>
+
+				    <!-- ATL 60 -->
+				    <g class="tooltip" id="ATL-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8561
+				        </text>
+				    </g>
+
+				    <!-- ATL 61 -->
+				    <g class="tooltip" id="ATL-61_tooltip" opacity="0" transform="translate(1094.809, 168.371)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7336
+				        </text>
+				    </g>
+
+				    <!-- ATL 62 -->
+				    <g class="tooltip" id="ATL-62_tooltip" opacity="0" transform="translate(1165.496, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/ATL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Atlanta Hawks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 109.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7999
+				        </text>
+				    </g>
+
+				<!-- BOS -->
+					<!-- BOS 46 -->
+					<g class="tooltip" id="BOS-46_tooltip" opacity="0" transform="translate(34.505, 770.605)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1946-47 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 60.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3608
+				        </text>
+				    </g>
+
+				    <!-- BOS  47 -->
+					<g class="tooltip" id="BOS-47_tooltip" opacity="0" transform="translate(105.191, 677.954)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1947-48 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 68.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3761
+				        </text>
+				    </g>
+
+				    <!-- BOS 48 -->
+					<g class="tooltip" id="BOS-48_tooltip" opacity="0" transform="translate(175.879, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1948-49 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 76.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4975
+				        </text>
+				    </g>
+
+				    <!-- BOS 49 -->
+					<g class="tooltip" id="BOS-49_tooltip" opacity="0" transform="translate(246.565, 585.301)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1949-50 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 79.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4252
+				        </text>
+				    </g>
+
+				    <!-- BOS 50 -->
+					<g class="tooltip" id="BOS-50_tooltip" opacity="0" transform="translate(317.253, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1950-51 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 85.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6184
+				        </text>
+				    </g>
+
+				    <!-- BOS 51 -->
+					<g class="tooltip" id="BOS-51_tooltip" opacity="0" transform="translate(387.939, 492.649)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1951-52 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 91.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5523
+				        </text>
+				    </g>
+
+				    <!-- BOS 52 -->
+					<g class="tooltip" id="BOS-52_tooltip" opacity="0" transform="translate(458.626, 492.649)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1952-53 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 88.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6742
+				        </text>
+				    </g>
+
+					<!-- BOS 53 -->
+					<g class="tooltip" id="BOS-53_tooltip" opacity="0" transform="translate(529.313, 492.649)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1953-54 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 87.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7472
+				        </text>
+				    </g>
+
+				    <!-- BOS 54 -->
+				    <g class="tooltip" id="BOS-54_tooltip" opacity="0" transform="translate(600, 399.997)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 101.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7027
+				        </text>
+				    </g>
+
+				    <!-- BOS 55 -->
+				    <g class="tooltip" id="BOS-55_tooltip" opacity="0" transform="translate(670.687, 353.671)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 106
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8064
+				        </text>
+				    </g>
+
+				    <!-- BOS 56 -->
+				    <g class="tooltip" id="BOS-56_tooltip" opacity="0" transform="translate(741.374, 353.671)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 105.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 10517
+				        </text>
+				    </g>
+
+				    <!-- BOS 57 -->
+				    <g class="tooltip" id="BOS-57_tooltip" opacity="0" transform="translate(812.061,  307.345)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 109.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8308
+				        </text>
+				    </g>
+
+				    <!-- BOS 58 -->
+				    <g class="tooltip" id="BOS-58_tooltip" opacity="0" transform="translate(882.748, 261.019)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 116.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8165
+				        </text>
+				    </g>
+
+				    <!-- BOS 59 -->
+				    <g class="tooltip" id="BOS-59_tooltip" opacity="0" transform="translate(953.435, 168.367)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 124.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7755
+				        </text>
+				    </g>
+
+				    <!-- BOS 60 -->
+				    <g class="tooltip" id="BOS-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 119.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7199
+				        </text>
+				    </g>
+
+				    <!-- BOS 61 -->
+				    <g class="tooltip" id="BOS-61_tooltip" opacity="0" transform="translate(1094.809, 214.693)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 121.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6852
+				        </text>
+				    </g>
+
+				    <!-- BOS 62 -->
+				    <g class="tooltip" id="BOS-62_tooltip" opacity="0" transform="translate(1165.496, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/BOS_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Boston Celtics
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8753
+				        </text>
+				    </g>
+
+				<!-- DET -->
+					<!-- DET 53 -->
+					<g class="tooltip" id="DET-53_tooltip" opacity="0" transform="translate(529.313, 583.308)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1953-54 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 77.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4218
+				        </text>
+				    </g>
+
+				    <!-- DET 54 -->
+				    <g class="tooltip" id="DET-54_tooltip" opacity="0" transform="translate(600, 492.651)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 92.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3717
+				        </text>
+				    </g>
+
+				    <!-- DET 55 -->
+				    <g class="tooltip" id="DET-55_tooltip" opacity="0" transform="translate(670.687, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 94.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4745
+				        </text>
+				    </g>
+
+				    <!-- DET 56 -->
+				    <g class="tooltip" id="DET-56_tooltip" opacity="0" transform="translate(741.374, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 96.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3859
+				        </text>
+				    </g>
+
+				    <!-- DET 57 -->
+				    <g class="tooltip" id="DET-57_tooltip" opacity="0" transform="translate(812.061, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 105.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4789
+				        </text>
+				    </g>
+
+				    <!-- DET 58 -->
+				    <g class="tooltip" id="DET-58_tooltip" opacity="0" transform="translate(882.748, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 105.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3978
+				        </text>
+				    </g>
+
+				    <!-- DET 59 -->
+				    <g class="tooltip" id="DET-59_tooltip" opacity="0" transform="translate(953.435, 307.348)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 111.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5742
+				        </text>
+				    </g>
+
+				    <!-- DET 60 -->
+				    <g class="tooltip" id="DET-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5298
+				        </text>
+				    </g>
+
+				    <!-- DET 61 -->
+				    <g class="tooltip" id="DET-61_tooltip" opacity="0" transform="translate(1094.809, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 115.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4769
+				        </text>
+				    </g>
+
+				    <!-- DET 62 -->
+				    <g class="tooltip" id="DET-62_tooltip" opacity="0" transform="translate(1165.496, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/DET_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Detroit Pistons
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 113.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3806
+				        </text>
+				    </g>
+
+				<!-- GOL -->
+					<!-- GOL 46 -->
+					<g class="tooltip" id="GOL-46_tooltip" opacity="0" transform="translate(34.505, 677.954)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1946-47 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 68.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4305
+				        </text>
+				    </g>
+
+				    <!-- GOL  47 -->
+					<g class="tooltip" id="GOL-47_tooltip" opacity="0" transform="translate(105.191, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1947-48 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 73.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4546
+				        </text>
+				    </g>
+
+				    <!-- GOL 48 -->
+					<g class="tooltip" id="GOL-48_tooltip" opacity="0" transform="translate(175.879, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1948-49 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 83.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3721
+				        </text>
+				    </g>
+
+				    <!-- GOL 49 -->
+					<g class="tooltip" id="GOL-49_tooltip" opacity="0" transform="translate(246.565, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1949-50 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 73.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2109
+				        </text>
+				    </g>
+
+				    <!-- GOL 50 -->
+					<g class="tooltip" id="GOL-50_tooltip" opacity="0" transform="translate(317.253, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1950-51 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 85.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3285
+				        </text>
+				    </g>
+
+				    <!-- GOL 51 -->
+					<g class="tooltip" id="GOL-51_tooltip" opacity="0" transform="translate(387.939, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1951-52 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 86.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3115
+				        </text>
+				    </g>
+
+				    <!-- GOL 52 -->
+					<g class="tooltip" id="GOL-52_tooltip" opacity="0" transform="translate(458.626, 583.308)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1952-53 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 80.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3346
+				        </text>
+				    </g>
+
+					<!-- GOL 53 -->
+					<g class="tooltip" id="GOL-53_tooltip" opacity="0" transform="translate(529.313, 583.308)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1953-54 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 78.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5952
+				        </text>
+				    </g>
+
+				    <!-- GOL 54 -->
+				    <g class="tooltip" id="GOL-54_tooltip" opacity="0" transform="translate(600, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 93.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5878
+				        </text>
+				    </g>
+
+				    <!-- GOL 55 -->
+				    <g class="tooltip" id="GOL-55_tooltip" opacity="0" transform="translate(670.687, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 103.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3890
+				        </text>
+				    </g>
+
+				    <!-- GOL 56 -->
+				    <g class="tooltip" id="GOL-56_tooltip" opacity="0" transform="translate(741.374, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 100.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5097
+				        </text>
+				    </g>
+
+				    <!-- GOL 57 -->
+				    <g class="tooltip" id="GOL-57_tooltip" opacity="0" transform="translate(812.061, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 104.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5067
+				        </text>
+				    </g>
+
+				    <!-- GOL 58 -->
+				    <g class="tooltip" id="GOL-58_tooltip" opacity="0" transform="translate(882.748, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 103.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5906
+				        </text>
+				    </g>
+
+				    <!-- GOL 59 -->
+				    <g class="tooltip" id="GOL-59_tooltip" opacity="0" transform="translate(953.435, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8086
+				        </text>
+				    </g>
+
+				    <!-- GOL 60 -->
+				    <g class="tooltip" id="GOL-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 121
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6766
+				        </text>
+				    </g>
+
+				    <!-- GOL 61 -->
+				    <g class="tooltip" id="GOL-61_tooltip" opacity="0" transform="translate(1094.809, 168.371)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 125.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5579
+				        </text>
+				    </g>
+
+				    <!-- GOL 62 -->
+				    <g class="tooltip" id="GOL-62_tooltip" opacity="0" transform="translate(1165.496, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/GOL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Golden State Warriors
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3067
+				        </text>
+				    </g>
+
+				<!-- LAL -->
+				    <!-- LAL 50 -->
+					<g class="tooltip" id="LAL-50_tooltip" opacity="0" transform="translate(317.253, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1950-51 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 82.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3285
+				        </text>
+				    </g>
+
+				    <!-- LAL 55 -->
+				    <g class="tooltip" id="LAL-55_tooltip" opacity="0" transform="translate(670.687, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 99.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4494
+				        </text>
+				    </g>
+
+				    <!-- LAL 56 -->
+				    <g class="tooltip" id="LAL-56_tooltip" opacity="0" transform="translate(741.374, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 102.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2652
+				        </text>
+				    </g>
+
+				    <!-- LAL 57 -->
+				    <g class="tooltip" id="LAL-57_tooltip" opacity="0" transform="translate(812.061, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 105.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3596
+				        </text>
+				    </g>
+
+				    <!-- LAL 58 -->
+				    <g class="tooltip" id="LAL-58_tooltip" opacity="0" transform="translate(882.748, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 106
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7464
+				        </text>
+				    </g>
+
+				    <!-- LAL 59 -->
+				    <g class="tooltip" id="LAL-59_tooltip" opacity="0" transform="translate(953.435, 307.348)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 107.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4110
+				        </text>
+				    </g>
+
+				    <!-- LAL 60 -->
+				    <g class="tooltip" id="LAL-60_tooltip" opacity="0" transform="translate(1024.122, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 114
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5045
+				        </text>
+				    </g>
+
+				    <!-- LAL 61 -->
+				    <g class="tooltip" id="LAL-61_tooltip" opacity="0" transform="translate(1094.809, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6139
+				        </text>
+				    </g>
+
+				    <!-- LAL 62 -->
+				    <g class="tooltip" id="LAL-62_tooltip" opacity="0" transform="translate(1165.496, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/LAL_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            L.A. Lakers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 115.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8396
+				        </text>
+				    </g>
+
+				<!-- NYN -->
+					<!-- NYN 46 -->
+					<g class="tooltip" id="NYN-46_tooltip" opacity="0" transform="translate(34.505, 724.279)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1946-47 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 64.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4311
+				        </text>
+				    </g>
+
+				    <!-- NYN  47 -->
+					<g class="tooltip" id="NYN-47_tooltip" opacity="0" transform="translate(105.191, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1947-48 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 74.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6881
+				        </text>
+				    </g>
+
+				    <!-- NYN 48 -->
+					<g class="tooltip" id="NYN-48_tooltip" opacity="0" transform="translate(175.879, 585.303)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1948-49 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 79.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7286
+				        </text>
+				    </g>
+
+				    <!-- NYN 49 -->
+					<g class="tooltip" id="NYN-49_tooltip" opacity="0" transform="translate(246.565, 585.303)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1949-50 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 80.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6437
+				        </text>
+				    </g>
+
+				    <!-- NYN 50 -->
+					<g class="tooltip" id="NYN-50_tooltip" opacity="0" transform="translate(317.253, 631.628)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1950-51 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 75.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5420
+				        </text>
+				    </g>
+
+				    <!-- NYN 51 -->
+					<g class="tooltip" id="NYN-51_tooltip" opacity="0" transform="translate(387.939, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1951-52 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 85
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5630
+				        </text>
+				    </g>
+
+				    <!-- NYN 52 -->
+					<g class="tooltip" id="NYN-52_tooltip" opacity="0" transform="translate(458.626, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1952-53 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 85.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7810
+				        </text>
+				    </g>
+
+					<!-- NYN 53 -->
+					<g class="tooltip" id="NYN-53_tooltip" opacity="0" transform="translate(529.313, 583.308)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1953-54 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 79
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8503
+				        </text>
+				    </g>
+
+				    <!-- NYN 54 -->
+				    <g class="tooltip" id="NYN-54_tooltip" opacity="0" transform="translate(600, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 92.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8565
+				        </text>
+				    </g>
+
+				    <!-- NYN 55 -->
+				    <g class="tooltip" id="NYN-55_tooltip" opacity="0" transform="translate(670.687, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 100.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 9772
+				        </text>
+				    </g>
+
+				    <!-- NYN 56 -->
+				    <g class="tooltip" id="NYN-56_tooltip" opacity="0" transform="translate(741.374, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 100.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 10321
+				        </text>
+				    </g>
+
+				    <!-- NYN 57 -->
+				    <g class="tooltip" id="NYN-57_tooltip" opacity="0" transform="translate(812.061, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 112.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 9252
+				        </text>
+				    </g>
+
+				    <!-- NYN 58 -->
+				    <g class="tooltip" id="NYN-58_tooltip" opacity="0" transform="translate(882.748, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 110.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 10889
+				        </text>
+				    </g>
+
+				    <!-- NYN 59 -->
+				    <g class="tooltip" id="NYN-59_tooltip" opacity="0" transform="translate(953.435, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 117.3
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 10825
+				        </text>
+				    </g>
+
+				    <!-- NYN 60 -->
+				    <g class="tooltip" id="NYN-60_tooltip" opacity="0" transform="translate(1024.122, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 113.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 10215
+				        </text>
+				    </g>
+
+				    <!-- NYN 61 -->
+				    <g class="tooltip" id="NYN-61_tooltip" opacity="0" transform="translate(1094.809, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 114.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8035
+				        </text>
+				    </g>
+
+				    <!-- NYN 62 -->
+				    <g class="tooltip" id="NYN-62_tooltip" opacity="0" transform="translate(1165.496, 307.349)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/NYN_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            New York Knicks
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 110.5
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 8905
+				        </text>
+				    </g>
+
+				<!-- PHI -->
+				    <!-- PHI 51 -->
+					<g class="tooltip" id="PHI-51_tooltip" opacity="0" transform="translate(387.939, 492.651)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						text (psuedo classes used in style.css)
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1951-52 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 86.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5276
+				        </text>
+				    </g>
+
+				    <!-- PHI 55 -->
+				    <g class="tooltip" id="PHI-55_tooltip" opacity="0" transform="translate(670.687, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 96.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4539
+				        </text>
+				    </g>
+
+				    <!-- PHI 56 -->
+				    <g class="tooltip" id="PHI-56_tooltip" opacity="0" transform="translate(741.374, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 99.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3835
+				        </text>
+				    </g>
+
+				    <!-- PHI 57 -->
+				    <g class="tooltip" id="PHI-57_tooltip" opacity="0" transform="translate(812.061, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 107.2
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3625
+				        </text>
+				    </g>
+
+				    <!-- PHI 58 -->
+				    <g class="tooltip" id="PHI-58_tooltip" opacity="0" transform="translate(882.748, 261.022)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 113.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3466
+				        </text>
+				    </g>
+
+				    <!-- PHI 59 -->
+				    <g class="tooltip" id="PHI-59_tooltip" opacity="0" transform="translate(953.435, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 118.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3667
+				        </text>
+				    </g>
+
+				    <!-- PHI 60 -->
+				    <g class="tooltip" id="PHI-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 121.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4014
+				        </text>
+				    </g>
+
+				    <!-- PHI 61 -->
+				    <g class="tooltip" id="PHI-61_tooltip" opacity="0" transform="translate(1094.809, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 120.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4017
+				        </text>
+				    </g>
+
+				    <!-- PHI 62 -->
+				    <g class="tooltip" id="PHI-62_tooltip" opacity="0" transform="translate(1165.496, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/PHI_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Philadelphia 76ers
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 121.6
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 5771
+				        </text>
+				    </g>
+
+				<!-- SAC -->
+				    <!-- SAC 48 -->
+					<g class="tooltip" id="SAC-48_tooltip" opacity="0" transform="translate(175.879, 538.977)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1948-49 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 84
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 7328
+				        </text>
+				    </g>
+
+				    <!-- SAC 49 -->
+					<g class="tooltip" id="SAC-49_tooltip" opacity="0" transform="translate(246.565, 585.303)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1949-50 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 82.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2408
+				        </text>
+				    </g>
+
+				    <!-- SAC 54 -->
+				    <g class="tooltip" id="SAC-54_tooltip" opacity="0" transform="translate(600, 492.651)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1954-55 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 90.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2478
+				        </text>
+				    </g>
+
+				    <!-- SAC 55 -->
+				    <g class="tooltip" id="SAC-55_tooltip" opacity="0" transform="translate(670.687, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1955-56 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 95.8
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3533
+				        </text>
+				    </g>
+
+				    <!-- SAC 56 -->
+				    <g class="tooltip" id="SAC-56_tooltip" opacity="0" transform="translate(741.374, 446.325)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1956-57 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 93.4
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4375
+				        </text>
+				    </g>
+
+				    <!-- SAC 57 -->
+				    <g class="tooltip" id="SAC-57_tooltip" opacity="0" transform="translate(812.061, 399.999)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1957-58 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 101.7
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 3641
+				        </text>
+				    </g>
+
+				    <!-- SAC 58 -->
+				    <g class="tooltip" id="SAC-58_tooltip" opacity="0" transform="translate(882.748, 353.674)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1958-59 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 103.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 2445
+				        </text>
+				    </g>
+
+				    <!-- SAC 59 -->
+				    <g class="tooltip" id="SAC-59_tooltip" opacity="0" transform="translate(953.435, 307.348)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1959-60 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 111.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 1878
+				        </text>
+				    </g>
+
+				    <!-- SAC 60 -->
+				    <g class="tooltip" id="SAC-60_tooltip" opacity="0" transform="translate(1024.122, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1960-61 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 117.9
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 6258
+				        </text>
+				    </g>
+
+				    <!-- SAC 61 -->
+				    <g class="tooltip" id="SAC-61_tooltip" opacity="0" transform="translate(1094.809, 168.371)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1961-62 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 123.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4724
+				        </text>
+				    </g>
+
+				    <!-- SAC 62 -->
+				    <g class="tooltip" id="SAC-62_tooltip" opacity="0" transform="translate(1165.496, 214.696)">
+						<!-- the triangle -->
+				        <polyline points="-15,-12  15,-12  0, 0"  style="fill:#333333;"/>
+				        <!-- rectangle box -->
+				        <rect x="-145px" y="-107px" width="290px" height="6em"/>
+				        
+				        <!-- team logo -->
+						<image x="-125" y="-90" width="40" height="40" xlink:href="img/SAC_logo.svg" />
+
+						<!-- text (psuedo classes used in style.css) -->
+				        <text x="-70" y="-90" dy="1em" fill="#FFFFFF">
+				            Sacramento Kings
+				        </text>
+				        <text x="-70" y="-76" dy="1em" fill="#FFFFFF">
+				            1962-63 season
+				        </text>
+				        <text x="-70" y="-54" dy="1em" fill="#FFFFFF">
+				            Avg. points per game: 119.1
+				        </text>
+				        <text x="-70" y="-40" dy="1em" fill="#FFFFFF">
+				            Avg. attendance: 4173
+				        </text>
+				    </g>
+			</svg>
+		</div>
+	</section>
+
+	<!-- scale -->
+	<aside class="outside-right">
+		<ul id="scale">
+			<li>125</li>
+			<li>120</li>
+			<li>115</li>
+			<li>110</li>
+			<li>105</li>
+			<li>100</li>
+			<li>95</li>
+			<li>90</li>
+			<li>85</li>
+			<li>80</li>
+			<li>75</li>
+			<li>70</li>
+			<li>65</li>
+			<li>60</li>
+		</ul>
+	</aside>
+
+	<!-- the guidelines -->
+	<div class="block">
+		<table id="lines-table">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="red"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		</table>
+	</div>
+
+	<div id="fallback">
+		<p>Use a larger screen or increase the size of your browser to see the Shot Clock visualisation.</p>
+	</div>
+
+
+	<script src="js/snap.svg-min.js"></script>
+	<script>
+		var s = Snap('#ppg');
+		var i = Snap('#ppg_tooltips')
+
+		//atl
+			var atl50 = Snap.select('#ATL-50');
+
+			var atl52 = Snap.select('#ATL-52');
+			var atl53 = Snap.select('#ATL-53');
+			var atl54 = Snap.select('#ATL-54');
+			var atl55 = Snap.select('#ATL-55');
+			var atl56 = Snap.select('#ATL-56');
+			var atl57 = Snap.select('#ATL-57');
+			var atl58 = Snap.select('#ATL-58');
+			var atl59 = Snap.select('#ATL-59');
+			var atl60 = Snap.select('#ATL-60');
+			var atl61 = Snap.select('#ATL-61');
+			var atl62 = Snap.select('#ATL-62');
+
+			var atl = s.group(atl50, atl52, atl53, atl54, atl55, atl56, atl57, atl58, atl59, atl60, atl61, atl62);
+
+			var atl50_tooltip = Snap.select('#ATL-50_tooltip');
+
+			var atl52_tooltip = Snap.select('#ATL-52_tooltip');
+			var atl53_tooltip = Snap.select('#ATL-53_tooltip');
+			var atl54_tooltip = Snap.select('#ATL-54_tooltip');
+			var atl55_tooltip = Snap.select('#ATL-55_tooltip');
+			var atl56_tooltip = Snap.select('#ATL-56_tooltip');
+			var atl57_tooltip = Snap.select('#ATL-57_tooltip');
+			var atl58_tooltip = Snap.select('#ATL-58_tooltip');
+			var atl59_tooltip = Snap.select('#ATL-59_tooltip');
+			var atl60_tooltip = Snap.select('#ATL-60_tooltip');
+			var atl61_tooltip = Snap.select('#ATL-61_tooltip');
+			var atl62_tooltip = Snap.select('#ATL-62_tooltip');
+
+
+
+			atl.hover(function () {
+			    console.log("ATL hover");
+			    atl50.attr({
+			        fill: 'red'
+			    }),
+
+			    atl52.attr({
+			        fill: 'red'
+			    }),
+			    atl53.attr({
+			        fill: 'red'
+			    }),
+			    atl54.attr({
+			    	fill: 'red'
+			    }),
+			    atl55.attr({
+			        fill: 'red'
+			    }),
+			    atl56.attr({
+			        fill: 'red'
+			    }),
+			    atl57.attr({
+			        fill: 'red'
+			    }),
+			    atl58.attr({
+			        fill: 'red'
+			    }),
+			    atl59.attr({
+			        fill: 'red'
+			    }),
+			    atl60.attr({
+			        fill: 'red'
+			    }),
+			    atl61.attr({
+			        fill: 'red'
+			    }),
+			    atl62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			    atl50.attr({
+			        fill: 'white'
+			    }),
+
+			    atl52.attr({
+			        fill: 'white'
+			    }),
+			    atl53.attr({
+			        fill: 'white'
+			    }),
+			    atl54.attr({
+			    	fill: 'white'
+			    }),
+			    atl55.attr({
+			        fill: 'white'
+			    }),
+			    atl56.attr({
+			        fill: 'white'
+			    }),
+			    atl57.attr({
+			        fill: 'white'
+			    }),
+			    atl58.attr({
+			        fill: 'white'
+			    }),
+			    atl59.attr({
+			        fill: 'white'
+			    }),
+			    atl60.attr({
+			        fill: 'white'
+			    }),
+			    atl61.attr({
+			        fill: 'white'
+			    }),
+			    atl62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			atl50.hover(function () {
+			    console.log("ATL-50 hover");
+			    atl50_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl50_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			
+			atl52.hover(function () {
+			    console.log("ATL-52 hover");
+			    atl52_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl52_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl53.hover(function () {
+			    console.log("ATL-53 hover");
+			    atl53_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl53_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl54.hover(function () {
+			    console.log("ATL-54 hover");
+			    atl54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl55.hover(function () {
+			    console.log("ATL-55 hover");
+			    atl55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl56.hover(function () {
+			    console.log("ATL-56 hover");
+			    atl56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl57.hover(function () {
+			    console.log("ATL-57 hover");
+			    atl57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl58.hover(function () {
+			    console.log("ATL-58 hover");
+			    atl58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl59.hover(function () {
+			    console.log("ATL-59 hover");
+			    atl59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl60.hover(function () {
+			    console.log("ATL-60 hover");
+			    atl60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl61.hover(function () {
+			    console.log("ATL-61 hover");
+			    atl61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			atl62.hover(function () {
+			    console.log("ATL-62 hover");
+			    atl62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   atl62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//bos
+			var bos46 = Snap.select('#BOS-46');
+			var bos47 = Snap.select('#BOS-47');
+			var bos48 = Snap.select('#BOS-48');
+			var bos49 = Snap.select('#BOS-49');
+			var bos50 = Snap.select('#BOS-50');
+			var bos51 = Snap.select('#BOS-51');
+			var bos52 = Snap.select('#BOS-52');
+			var bos53 = Snap.select('#BOS-53');
+			var bos54 = Snap.select('#BOS-54');
+			var bos55 = Snap.select('#BOS-55');
+			var bos56 = Snap.select('#BOS-56');
+			var bos57 = Snap.select('#BOS-57');
+			var bos58 = Snap.select('#BOS-58');
+			var bos59 = Snap.select('#BOS-59');
+			var bos60 = Snap.select('#BOS-60');
+			var bos61 = Snap.select('#BOS-61');
+			var bos62 = Snap.select('#BOS-62');
+
+			var bos = s.group(bos46, bos47, bos48, bos49, bos50, bos51, bos52, bos53, bos54, bos55, bos56, bos57, bos58, bos59, bos60, bos61, bos62);
+
+			var bos46_tooltip = Snap.select('#BOS-46_tooltip');
+			var bos47_tooltip = Snap.select('#BOS-47_tooltip');
+			var bos48_tooltip = Snap.select('#BOS-48_tooltip');
+			var bos49_tooltip = Snap.select('#BOS-49_tooltip');
+			var bos50_tooltip = Snap.select('#BOS-50_tooltip');
+			var bos51_tooltip = Snap.select('#BOS-51_tooltip');
+			var bos52_tooltip = Snap.select('#BOS-52_tooltip');
+			var bos53_tooltip = Snap.select('#BOS-53_tooltip');
+			var bos54_tooltip = Snap.select('#BOS-54_tooltip');
+			var bos55_tooltip = Snap.select('#BOS-55_tooltip');
+			var bos56_tooltip = Snap.select('#BOS-56_tooltip');
+			var bos57_tooltip = Snap.select('#BOS-57_tooltip');
+			var bos58_tooltip = Snap.select('#BOS-58_tooltip');
+			var bos59_tooltip = Snap.select('#BOS-59_tooltip');
+			var bos60_tooltip = Snap.select('#BOS-60_tooltip');
+			var bos61_tooltip = Snap.select('#BOS-61_tooltip');
+			var bos62_tooltip = Snap.select('#BOS-62_tooltip');
+
+
+
+			bos.hover(function () {
+			    console.log("BOS hover");
+			    bos46.attr({
+			        fill: 'red'
+			    }),
+			    bos47.attr({
+			        fill: 'red'
+			    }),
+			    bos48.attr({
+			        fill: 'red'
+			    }),
+			    bos49.attr({
+			        fill: 'red'
+			    }),
+			    bos50.attr({
+			        fill: 'red'
+			    }),
+			    bos51.attr({
+			        fill: 'red'
+			    }),
+			    bos52.attr({
+			        fill: 'red'
+			    }),
+			    bos53.attr({
+			        fill: 'red'
+			    }),
+			    bos54.attr({
+			    	fill: 'red'
+			    }),
+			    bos55.attr({
+			        fill: 'red'
+			    }),
+			    bos56.attr({
+			        fill: 'red'
+			    }),
+			    bos57.attr({
+			        fill: 'red'
+			    }),
+			    bos58.attr({
+			        fill: 'red'
+			    }),
+			    bos59.attr({
+			        fill: 'red'
+			    }),
+			    bos60.attr({
+			        fill: 'red'
+			    }),
+			    bos61.attr({
+			        fill: 'red'
+			    }),
+			    bos62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			   bos46.attr({
+			        fill: 'white'
+			    }),
+			    bos47.attr({
+			        fill: 'white'
+			    }),
+			    bos48.attr({
+			        fill: 'white'
+			    }),
+			    bos49.attr({
+			        fill: 'white'
+			    }),
+			    bos50.attr({
+			        fill: 'white'
+			    }),
+			    bos51.attr({
+			        fill: 'white'
+			    }),
+			    bos52.attr({
+			        fill: 'white'
+			    }),
+			    bos53.attr({
+			        fill: 'white'
+			    }),
+			    bos54.attr({
+			    	fill: 'white'
+			    }),
+			    bos55.attr({
+			        fill: 'white'
+			    }),
+			    bos56.attr({
+			        fill: 'white'
+			    }),
+			    bos57.attr({
+			        fill: 'white'
+			    }),
+			    bos58.attr({
+			        fill: 'white'
+			    }),
+			    bos59.attr({
+			        fill: 'white'
+			    }),
+			    bos60.attr({
+			        fill: 'white'
+			    }),
+			    bos61.attr({
+			        fill: 'white'
+			    }),
+			    bos62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			bos46.hover(function () {
+			    console.log("BOS-46 hover");
+			    bos46_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos46_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos47.hover(function () {
+			    console.log("BOS-47 hover");
+			    bos47_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos47_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos48.hover(function () {
+			    console.log("BOS-48 hover");
+			    bos48_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos48_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos49.hover(function () {
+			    console.log("BOS-49 hover");
+			    bos49_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos49_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos50.hover(function () {
+			    console.log("BOS-50 hover");
+			    bos50_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos50_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos51.hover(function () {
+			    console.log("BOS-51 hover");
+			    bos51_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos51_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos52.hover(function () {
+			    console.log("BOS-52 hover");
+			    bos52_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos52_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos53.hover(function () {
+			    console.log("BOS-53 hover");
+			    bos53_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos53_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos54.hover(function () {
+			    console.log("BOS-54 hover");
+			    bos54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos55.hover(function () {
+			    console.log("BOS-55 hover");
+			    bos55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos56.hover(function () {
+			    console.log("BOS-56 hover");
+			    bos56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos57.hover(function () {
+			    console.log("BOS-57 hover");
+			    bos57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos58.hover(function () {
+			    console.log("BOS-58 hover");
+			    bos58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos59.hover(function () {
+			    console.log("BOS-59 hover");
+			    bos59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos60.hover(function () {
+			    console.log("BOS-60 hover");
+			    bos60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos61.hover(function () {
+			    console.log("BOS-61 hover");
+			    bos61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			bos62.hover(function () {
+			    console.log("BOS-62 hover");
+			    bos62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   bos62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//det
+			var det53 = Snap.select('#DET-53');
+			var det54 = Snap.select('#DET-54');
+			var det55 = Snap.select('#DET-55');
+			var det56 = Snap.select('#DET-56');
+			var det57 = Snap.select('#DET-57');
+			var det58 = Snap.select('#DET-58');
+			var det59 = Snap.select('#DET-59');
+			var det60 = Snap.select('#DET-60');
+			var det61 = Snap.select('#DET-61');
+			var det62 = Snap.select('#DET-62');
+
+			var det = s.group(det53, det54, det55, det56, det57, det58, det59, det60, det61, det62);
+
+			var det53_tooltip = Snap.select('#DET-53_tooltip');
+			var det54_tooltip = Snap.select('#DET-54_tooltip');
+			var det55_tooltip = Snap.select('#DET-55_tooltip');
+			var det56_tooltip = Snap.select('#DET-56_tooltip');
+			var det57_tooltip = Snap.select('#DET-57_tooltip');
+			var det58_tooltip = Snap.select('#DET-58_tooltip');
+			var det59_tooltip = Snap.select('#DET-59_tooltip');
+			var det60_tooltip = Snap.select('#DET-60_tooltip');
+			var det61_tooltip = Snap.select('#DET-61_tooltip');
+			var det62_tooltip = Snap.select('#DET-62_tooltip');
+
+
+
+			det.hover(function () {
+			    console.log("DET hover");
+			    det53.attr({
+			        fill: 'red'
+			    }),
+			    det54.attr({
+			    	fill: 'red'
+			    }),
+			    det55.attr({
+			        fill: 'red'
+			    }),
+			    det56.attr({
+			        fill: 'red'
+			    }),
+			    det57.attr({
+			        fill: 'red'
+			    }),
+			    det58.attr({
+			        fill: 'red'
+			    }),
+			    det59.attr({
+			        fill: 'red'
+			    }),
+			    det60.attr({
+			        fill: 'red'
+			    }),
+			    det61.attr({
+			        fill: 'red'
+			    }),
+			    det62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			    det53.attr({
+			        fill: 'white'
+			    }),
+			    det54.attr({
+			    	fill: 'white'
+			    }),
+			    det55.attr({
+			        fill: 'white'
+			    }),
+			    det56.attr({
+			        fill: 'white'
+			    }),
+			    det57.attr({
+			        fill: 'white'
+			    }),
+			    det58.attr({
+			        fill: 'white'
+			    }),
+			    det59.attr({
+			        fill: 'white'
+			    }),
+			    det60.attr({
+			        fill: 'white'
+			    }),
+			    det61.attr({
+			        fill: 'white'
+			    }),
+			    det62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			det53.hover(function () {
+			    console.log("DET-53 hover");
+			    det53_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det53_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det54.hover(function () {
+			    console.log("DET-54 hover");
+			    det54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det55.hover(function () {
+			    console.log("DET-55 hover");
+			    det55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det56.hover(function () {
+			    console.log("DET-56 hover");
+			    det56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det57.hover(function () {
+			    console.log("DET-57 hover");
+			    det57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det58.hover(function () {
+			    console.log("DET-58 hover");
+			    det58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det59.hover(function () {
+			    console.log("DET-59 hover");
+			    det59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det60.hover(function () {
+			    console.log("DET-60 hover");
+			    det60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det61.hover(function () {
+			    console.log("DET-61 hover");
+			    det61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			det62.hover(function () {
+			    console.log("DET-62 hover");
+			    det62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   det62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//gol
+			var gol46 = Snap.select('#GOL-46');
+			var gol47 = Snap.select('#GOL-47');
+			var gol48 = Snap.select('#GOL-48');
+			var gol49 = Snap.select('#GOL-49');
+			var gol50 = Snap.select('#GOL-50');
+			var gol51 = Snap.select('#GOL-51');
+			var gol52 = Snap.select('#GOL-52');
+			var gol53 = Snap.select('#GOL-53');
+			var gol54 = Snap.select('#GOL-54');
+			var gol55 = Snap.select('#GOL-55');
+			var gol56 = Snap.select('#GOL-56');
+			var gol57 = Snap.select('#GOL-57');
+			var gol58 = Snap.select('#GOL-58');
+			var gol59 = Snap.select('#GOL-59');
+			var gol60 = Snap.select('#GOL-60');
+			var gol61 = Snap.select('#GOL-61');
+			var gol62 = Snap.select('#GOL-62');
+
+			var gol = s.group(gol46, gol47, gol48, gol49, gol50, gol51, gol52, gol53, gol54, gol55, gol56, gol57, gol58, gol59, gol60, gol61, gol62);
+
+			var gol46_tooltip = Snap.select('#GOL-46_tooltip');
+			var gol47_tooltip = Snap.select('#GOL-47_tooltip');
+			var gol48_tooltip = Snap.select('#GOL-48_tooltip');
+			var gol49_tooltip = Snap.select('#GOL-49_tooltip');
+			var gol50_tooltip = Snap.select('#GOL-50_tooltip');
+			var gol51_tooltip = Snap.select('#GOL-51_tooltip');
+			var gol52_tooltip = Snap.select('#GOL-52_tooltip');
+			var gol53_tooltip = Snap.select('#GOL-53_tooltip');
+			var gol54_tooltip = Snap.select('#GOL-54_tooltip');
+			var gol55_tooltip = Snap.select('#GOL-55_tooltip');
+			var gol56_tooltip = Snap.select('#GOL-56_tooltip');
+			var gol57_tooltip = Snap.select('#GOL-57_tooltip');
+			var gol58_tooltip = Snap.select('#GOL-58_tooltip');
+			var gol59_tooltip = Snap.select('#GOL-59_tooltip');
+			var gol60_tooltip = Snap.select('#GOL-60_tooltip');
+			var gol61_tooltip = Snap.select('#GOL-61_tooltip');
+			var gol62_tooltip = Snap.select('#GOL-62_tooltip');
+
+
+
+			gol.hover(function () {
+			    console.log("GOL hover");
+			    gol46.attr({
+			        fill: 'red'
+			    }),
+			    gol47.attr({
+			        fill: 'red'
+			    }),
+			    gol48.attr({
+			        fill: 'red'
+			    }),
+			    gol49.attr({
+			        fill: 'red'
+			    }),
+			    gol50.attr({
+			        fill: 'red'
+			    }),
+			    gol51.attr({
+			        fill: 'red'
+			    }),
+			    gol52.attr({
+			        fill: 'red'
+			    }),
+			    gol53.attr({
+			        fill: 'red'
+			    }),
+			    gol54.attr({
+			    	fill: 'red'
+			    }),
+			    gol55.attr({
+			        fill: 'red'
+			    }),
+			    gol56.attr({
+			        fill: 'red'
+			    }),
+			    gol57.attr({
+			        fill: 'red'
+			    }),
+			    gol58.attr({
+			        fill: 'red'
+			    }),
+			    gol59.attr({
+			        fill: 'red'
+			    }),
+			    gol60.attr({
+			        fill: 'red'
+			    }),
+			    gol61.attr({
+			        fill: 'red'
+			    }),
+			    gol62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			   gol46.attr({
+			        fill: 'white'
+			    }),
+			    gol47.attr({
+			        fill: 'white'
+			    }),
+			    gol48.attr({
+			        fill: 'white'
+			    }),
+			    gol49.attr({
+			        fill: 'white'
+			    }),
+			    gol50.attr({
+			        fill: 'white'
+			    }),
+			    gol51.attr({
+			        fill: 'white'
+			    }),
+			    gol52.attr({
+			        fill: 'white'
+			    }),
+			    gol53.attr({
+			        fill: 'white'
+			    }),
+			    gol54.attr({
+			    	fill: 'white'
+			    }),
+			    gol55.attr({
+			        fill: 'white'
+			    }),
+			    gol56.attr({
+			        fill: 'white'
+			    }),
+			    gol57.attr({
+			        fill: 'white'
+			    }),
+			    gol58.attr({
+			        fill: 'white'
+			    }),
+			    gol59.attr({
+			        fill: 'white'
+			    }),
+			    gol60.attr({
+			        fill: 'white'
+			    }),
+			    gol61.attr({
+			        fill: 'white'
+			    }),
+			    gol62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			gol46.hover(function () {
+			    console.log("GOL-46 hover");
+			    gol46_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol46_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol47.hover(function () {
+			    console.log("GOL-47 hover");
+			    gol47_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol47_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol48.hover(function () {
+			    console.log("GOL-48 hover");
+			    gol48_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol48_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol49.hover(function () {
+			    console.log("GOL-49 hover");
+			    gol49_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol49_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol50.hover(function () {
+			    console.log("GOL-50 hover");
+			    gol50_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol50_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol51.hover(function () {
+			    console.log("GOL-51 hover");
+			    gol51_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol51_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol52.hover(function () {
+			    console.log("GOL-52 hover");
+			    gol52_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol52_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol53.hover(function () {
+			    console.log("GOL-53 hover");
+			    gol53_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol53_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol54.hover(function () {
+			    console.log("GOL-54 hover");
+			    gol54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol55.hover(function () {
+			    console.log("GOL-55 hover");
+			    gol55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol56.hover(function () {
+			    console.log("GOL-56 hover");
+			    gol56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol57.hover(function () {
+			    console.log("GOL-57 hover");
+			    gol57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol58.hover(function () {
+			    console.log("GOL-58 hover");
+			    gol58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol59.hover(function () {
+			    console.log("GOL-59 hover");
+			    gol59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol60.hover(function () {
+			    console.log("GOL-60 hover");
+			    gol60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol61.hover(function () {
+			    console.log("GOL-61 hover");
+			    gol61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			gol62.hover(function () {
+			    console.log("GOL-62 hover");
+			    gol62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   gol62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//lal
+			var lal50 = Snap.select('#LAL-50');
+			
+			var lal55 = Snap.select('#LAL-55');
+			var lal56 = Snap.select('#LAL-56');
+			var lal57 = Snap.select('#LAL-57');
+			var lal58 = Snap.select('#LAL-58');
+			var lal59 = Snap.select('#LAL-59');
+			var lal60 = Snap.select('#LAL-60');
+			var lal61 = Snap.select('#LAL-61');
+			var lal62 = Snap.select('#LAL-62');
+
+			var lal = s.group(lal50, lal55, lal56, lal57, lal58, lal59, lal60, lal61, lal62);
+
+			var lal50_tooltip = Snap.select('#LAL-50_tooltip');
+
+			var lal55_tooltip = Snap.select('#LAL-55_tooltip');
+			var lal56_tooltip = Snap.select('#LAL-56_tooltip');
+			var lal57_tooltip = Snap.select('#LAL-57_tooltip');
+			var lal58_tooltip = Snap.select('#LAL-58_tooltip');
+			var lal59_tooltip = Snap.select('#LAL-59_tooltip');
+			var lal60_tooltip = Snap.select('#LAL-60_tooltip');
+			var lal61_tooltip = Snap.select('#LAL-61_tooltip');
+			var lal62_tooltip = Snap.select('#LAL-62_tooltip');
+
+
+
+			lal.hover(function () {
+			    console.log("LAL hover");
+			    lal50.attr({
+			        fill: 'red'
+			    }),
+
+			    lal55.attr({
+			        fill: 'red'
+			    }),
+			    lal56.attr({
+			        fill: 'red'
+			    }),
+			    lal57.attr({
+			        fill: 'red'
+			    }),
+			    lal58.attr({
+			        fill: 'red'
+			    }),
+			    lal59.attr({
+			        fill: 'red'
+			    }),
+			    lal60.attr({
+			        fill: 'red'
+			    }),
+			    lal61.attr({
+			        fill: 'red'
+			    }),
+			    lal62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			    lal50.attr({
+			        fill: 'white'
+			    }),
+
+			    lal55.attr({
+			        fill: 'white'
+			    }),
+			    lal56.attr({
+			        fill: 'white'
+			    }),
+			    lal57.attr({
+			        fill: 'white'
+			    }),
+			    lal58.attr({
+			        fill: 'white'
+			    }),
+			    lal59.attr({
+			        fill: 'white'
+			    }),
+			    lal60.attr({
+			        fill: 'white'
+			    }),
+			    lal61.attr({
+			        fill: 'white'
+			    }),
+			    lal62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			lal50.hover(function () {
+			    console.log("LAL-50 hover");
+			    lal50_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal50_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+			lal55.hover(function () {
+			    console.log("LAL-55 hover");
+			    lal55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal56.hover(function () {
+			    console.log("LAL-56 hover");
+			    lal56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal57.hover(function () {
+			    console.log("LAL-57 hover");
+			    lal57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal58.hover(function () {
+			    console.log("LAL-58 hover");
+			    lal58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal59.hover(function () {
+			    console.log("LAL-59 hover");
+			    lal59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal60.hover(function () {
+			    console.log("LAL-60 hover");
+			    lal60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal61.hover(function () {
+			    console.log("LAL-61 hover");
+			    lal61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			lal62.hover(function () {
+			    console.log("LAL-62 hover");
+			    lal62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   lal62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//nyn
+			var nyn46 = Snap.select('#NYN-46');
+			var nyn47 = Snap.select('#NYN-47');
+			var nyn48 = Snap.select('#NYN-48');
+			var nyn49 = Snap.select('#NYN-49');
+			var nyn50 = Snap.select('#NYN-50');
+			var nyn51 = Snap.select('#NYN-51');
+			var nyn52 = Snap.select('#NYN-52');
+			var nyn53 = Snap.select('#NYN-53');
+			var nyn54 = Snap.select('#NYN-54');
+			var nyn55 = Snap.select('#NYN-55');
+			var nyn56 = Snap.select('#NYN-56');
+			var nyn57 = Snap.select('#NYN-57');
+			var nyn58 = Snap.select('#NYN-58');
+			var nyn59 = Snap.select('#NYN-59');
+			var nyn60 = Snap.select('#NYN-60');
+			var nyn61 = Snap.select('#NYN-61');
+			var nyn62 = Snap.select('#NYN-62');
+
+			var nyn = s.group(nyn46, nyn47, nyn48, nyn49, nyn50, nyn51, nyn52, nyn53, nyn54, nyn55, nyn56, nyn57, nyn58, nyn59, nyn60, nyn61, nyn62);
+
+			var nyn46_tooltip = Snap.select('#NYN-46_tooltip');
+			var nyn47_tooltip = Snap.select('#NYN-47_tooltip');
+			var nyn48_tooltip = Snap.select('#NYN-48_tooltip');
+			var nyn49_tooltip = Snap.select('#NYN-49_tooltip');
+			var nyn50_tooltip = Snap.select('#NYN-50_tooltip');
+			var nyn51_tooltip = Snap.select('#NYN-51_tooltip');
+			var nyn52_tooltip = Snap.select('#NYN-52_tooltip');
+			var nyn53_tooltip = Snap.select('#NYN-53_tooltip');
+			var nyn54_tooltip = Snap.select('#NYN-54_tooltip');
+			var nyn55_tooltip = Snap.select('#NYN-55_tooltip');
+			var nyn56_tooltip = Snap.select('#NYN-56_tooltip');
+			var nyn57_tooltip = Snap.select('#NYN-57_tooltip');
+			var nyn58_tooltip = Snap.select('#NYN-58_tooltip');
+			var nyn59_tooltip = Snap.select('#NYN-59_tooltip');
+			var nyn60_tooltip = Snap.select('#NYN-60_tooltip');
+			var nyn61_tooltip = Snap.select('#NYN-61_tooltip');
+			var nyn62_tooltip = Snap.select('#NYN-62_tooltip');
+
+
+
+			nyn.hover(function () {
+			    console.log("NYN hover");
+			    nyn46.attr({
+			        fill: 'red'
+			    }),
+			    nyn47.attr({
+			        fill: 'red'
+			    }),
+			    nyn48.attr({
+			        fill: 'red'
+			    }),
+			    nyn49.attr({
+			        fill: 'red'
+			    }),
+			    nyn50.attr({
+			        fill: 'red'
+			    }),
+			    nyn51.attr({
+			        fill: 'red'
+			    }),
+			    nyn52.attr({
+			        fill: 'red'
+			    }),
+			    nyn53.attr({
+			        fill: 'red'
+			    }),
+			    nyn54.attr({
+			    	fill: 'red'
+			    }),
+			    nyn55.attr({
+			        fill: 'red'
+			    }),
+			    nyn56.attr({
+			        fill: 'red'
+			    }),
+			    nyn57.attr({
+			        fill: 'red'
+			    }),
+			    nyn58.attr({
+			        fill: 'red'
+			    }),
+			    nyn59.attr({
+			        fill: 'red'
+			    }),
+			    nyn60.attr({
+			        fill: 'red'
+			    }),
+			    nyn61.attr({
+			        fill: 'red'
+			    }),
+			    nyn62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			   nyn46.attr({
+			        fill: 'white'
+			    }),
+			    nyn47.attr({
+			        fill: 'white'
+			    }),
+			    nyn48.attr({
+			        fill: 'white'
+			    }),
+			    nyn49.attr({
+			        fill: 'white'
+			    }),
+			    nyn50.attr({
+			        fill: 'white'
+			    }),
+			    nyn51.attr({
+			        fill: 'white'
+			    }),
+			    nyn52.attr({
+			        fill: 'white'
+			    }),
+			    nyn53.attr({
+			        fill: 'white'
+			    }),
+			    nyn54.attr({
+			    	fill: 'white'
+			    }),
+			    nyn55.attr({
+			        fill: 'white'
+			    }),
+			    nyn56.attr({
+			        fill: 'white'
+			    }),
+			    nyn57.attr({
+			        fill: 'white'
+			    }),
+			    nyn58.attr({
+			        fill: 'white'
+			    }),
+			    nyn59.attr({
+			        fill: 'white'
+			    }),
+			    nyn60.attr({
+			        fill: 'white'
+			    }),
+			    nyn61.attr({
+			        fill: 'white'
+			    }),
+			    nyn62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			nyn46.hover(function () {
+			    console.log("NYN-46 hover");
+			    nyn46_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn46_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn47.hover(function () {
+			    console.log("NYN-47 hover");
+			    nyn47_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn47_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn48.hover(function () {
+			    console.log("NYN-48 hover");
+			    nyn48_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn48_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn49.hover(function () {
+			    console.log("NYN-49 hover");
+			    nyn49_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn49_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn50.hover(function () {
+			    console.log("NYN-50 hover");
+			    nyn50_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn50_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn51.hover(function () {
+			    console.log("NYN-51 hover");
+			    nyn51_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn51_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn52.hover(function () {
+			    console.log("NYN-52 hover");
+			    nyn52_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn52_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn53.hover(function () {
+			    console.log("NYN-53 hover");
+			    nyn53_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn53_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn54.hover(function () {
+			    console.log("NYN-54 hover");
+			    nyn54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn55.hover(function () {
+			    console.log("NYN-55 hover");
+			    nyn55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn56.hover(function () {
+			    console.log("NYN-56 hover");
+			    nyn56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn57.hover(function () {
+			    console.log("NYN-57 hover");
+			    nyn57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn58.hover(function () {
+			    console.log("NYN-58 hover");
+			    nyn58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn59.hover(function () {
+			    console.log("NYN-59 hover");
+			    nyn59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn60.hover(function () {
+			    console.log("NYN-60 hover");
+			    nyn60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn61.hover(function () {
+			    console.log("NYN-61 hover");
+			    nyn61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			nyn62.hover(function () {
+			    console.log("NYN-62 hover");
+			    nyn62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   nyn62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//phi
+			var phi51 = Snap.select('#PHI-51');
+			
+			var phi55 = Snap.select('#PHI-55');
+			var phi56 = Snap.select('#PHI-56');
+			var phi57 = Snap.select('#PHI-57');
+			var phi58 = Snap.select('#PHI-58');
+			var phi59 = Snap.select('#PHI-59');
+			var phi60 = Snap.select('#PHI-60');
+			var phi61 = Snap.select('#PHI-61');
+			var phi62 = Snap.select('#PHI-62');
+
+			var phi = s.group(phi51, phi55, phi56, phi57, phi58, phi59, phi60, phi61, phi62);
+
+			var phi51_tooltip = Snap.select('#PHI-51_tooltip');
+
+			var phi55_tooltip = Snap.select('#PHI-55_tooltip');
+			var phi56_tooltip = Snap.select('#PHI-56_tooltip');
+			var phi57_tooltip = Snap.select('#PHI-57_tooltip');
+			var phi58_tooltip = Snap.select('#PHI-58_tooltip');
+			var phi59_tooltip = Snap.select('#PHI-59_tooltip');
+			var phi60_tooltip = Snap.select('#PHI-60_tooltip');
+			var phi61_tooltip = Snap.select('#PHI-61_tooltip');
+			var phi62_tooltip = Snap.select('#PHI-62_tooltip');
+
+
+
+			phi.hover(function () {
+			    console.log("PHI hover");
+			    phi51.attr({
+			        fill: 'red'
+			    }),
+
+			    phi55.attr({
+			        fill: 'red'
+			    }),
+			    phi56.attr({
+			        fill: 'red'
+			    }),
+			    phi57.attr({
+			        fill: 'red'
+			    }),
+			    phi58.attr({
+			        fill: 'red'
+			    }),
+			    phi59.attr({
+			        fill: 'red'
+			    }),
+			    phi60.attr({
+			        fill: 'red'
+			    }),
+			    phi61.attr({
+			        fill: 'red'
+			    }),
+			    phi62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			    phi51.attr({
+			        fill: 'white'
+			    }),
+
+			    phi55.attr({
+			        fill: 'white'
+			    }),
+			    phi56.attr({
+			        fill: 'white'
+			    }),
+			    phi57.attr({
+			        fill: 'white'
+			    }),
+			    phi58.attr({
+			        fill: 'white'
+			    }),
+			    phi59.attr({
+			        fill: 'white'
+			    }),
+			    phi60.attr({
+			        fill: 'white'
+			    }),
+			    phi61.attr({
+			        fill: 'white'
+			    }),
+			    phi62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			phi51.hover(function () {
+			    console.log("PHI-50 hover");
+			    phi51_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi51_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+			phi55.hover(function () {
+			    console.log("PHI-55 hover");
+			    phi55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi56.hover(function () {
+			    console.log("PHI-56 hover");
+			    phi56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi57.hover(function () {
+			    console.log("PHI-57 hover");
+			    phi57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi58.hover(function () {
+			    console.log("PHI-58 hover");
+			    phi58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi59.hover(function () {
+			    console.log("PHI-59 hover");
+			    phi59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi60.hover(function () {
+			    console.log("PHI-60 hover");
+			    phi60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi61.hover(function () {
+			    console.log("PHI-61 hover");
+			    phi61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			phi62.hover(function () {
+			    console.log("PHI-62 hover");
+			    phi62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   phi62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+
+		//sac
+			var sac48 = Snap.select('#SAC-48');
+			var sac49 = Snap.select('#SAC-49');
+			
+			var sac54 = Snap.select('#SAC-54');
+			var sac55 = Snap.select('#SAC-55');
+			var sac56 = Snap.select('#SAC-56');
+			var sac57 = Snap.select('#SAC-57');
+			var sac58 = Snap.select('#SAC-58');
+			var sac59 = Snap.select('#SAC-59');
+			var sac60 = Snap.select('#SAC-60');
+			var sac61 = Snap.select('#SAC-61');
+			var sac62 = Snap.select('#SAC-62');
+
+			var sac = s.group(sac48, sac49, sac54, sac55, sac56, sac57, sac58, sac59, sac60, sac61, sac62);
+
+			var sac48_tooltip = Snap.select('#SAC-48_tooltip');
+			var sac49_tooltip = Snap.select('#SAC-49_tooltip');
+			
+			var sac54_tooltip = Snap.select('#SAC-54_tooltip');
+			var sac55_tooltip = Snap.select('#SAC-55_tooltip');
+			var sac56_tooltip = Snap.select('#SAC-56_tooltip');
+			var sac57_tooltip = Snap.select('#SAC-57_tooltip');
+			var sac58_tooltip = Snap.select('#SAC-58_tooltip');
+			var sac59_tooltip = Snap.select('#SAC-59_tooltip');
+			var sac60_tooltip = Snap.select('#SAC-60_tooltip');
+			var sac61_tooltip = Snap.select('#SAC-61_tooltip');
+			var sac62_tooltip = Snap.select('#SAC-62_tooltip');
+
+
+
+			sac.hover(function () {
+			    console.log("SAC hover");
+			    sac48.attr({
+			        fill: 'red'
+			    }),
+			    sac49.attr({
+			        fill: 'red'
+			    }),
+
+			    sac54.attr({
+			    	fill: 'red'
+			    }),
+			    sac55.attr({
+			        fill: 'red'
+			    }),
+			    sac56.attr({
+			        fill: 'red'
+			    }),
+			    sac57.attr({
+			        fill: 'red'
+			    }),
+			    sac58.attr({
+			        fill: 'red'
+			    }),
+			    sac59.attr({
+			        fill: 'red'
+			    }),
+			    sac60.attr({
+			        fill: 'red'
+			    }),
+			    sac61.attr({
+			        fill: 'red'
+			    }),
+			    sac62.attr({
+			        fill: 'red'
+			    });
+			}, function () {
+			    sac48.attr({
+			        fill: 'white'
+			    }),
+			    sac49.attr({
+			        fill: 'white'
+			    }),
+
+			    sac54.attr({
+			    	fill: 'white'
+			    }),
+			    sac55.attr({
+			        fill: 'white'
+			    }),
+			    sac56.attr({
+			        fill: 'white'
+			    }),
+			    sac57.attr({
+			        fill: 'white'
+			    }),
+			    sac58.attr({
+			        fill: 'white'
+			    }),
+			    sac59.attr({
+			        fill: 'white'
+			    }),
+			    sac60.attr({
+			        fill: 'white'
+			    }),
+			    sac61.attr({
+			        fill: 'white'
+			    }),
+			    sac62.attr({
+			        fill: 'white'
+			    });
+			});
+
+
+
+			sac48.hover(function () {
+			    console.log("SAC-48 hover");
+			    sac48_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac48_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac49.hover(function () {
+			    console.log("SAC-49 hover");
+			    sac49_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac49_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			
+			sac54.hover(function () {
+			    console.log("SAC-54 hover");
+			    sac54_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac54_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac55.hover(function () {
+			    console.log("SAC-55 hover");
+			    sac55_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac55_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac56.hover(function () {
+			    console.log("SAC-56 hover");
+			    sac56_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac56_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac57.hover(function () {
+			    console.log("SAC-57 hover");
+			    sac57_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac57_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac58.hover(function () {
+			    console.log("SAC-58 hover");
+			    sac58_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac58_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac59.hover(function () {
+			    console.log("SAC-59 hover");
+			    sac59_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac59_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac60.hover(function () {
+			    console.log("SAC-60 hover");
+			    sac60_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac60_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac61.hover(function () {
+			    console.log("SAC-61 hover");
+			    sac61_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac61_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+			sac62.hover(function () {
+			    console.log("SAC-62 hover");
+			    sac62_tooltip.attr({
+			        opacity: 1
+			    });
+			}, function () {
+			   sac62_tooltip.attr({
+			        opacity: 0
+			    });
+			});
+	</script>
+</body>
